@@ -1,0 +1,11 @@
+mcl_beacon_area_shielding (Protected areas block effects) bool false
+mcl_beacon_beam_break_nodes (mcl_beacon beam breaks nodes) bool false
+mcl_beacon_beam_climbable (Climbable mcl_beacon beam) bool false
+mcl_beacon_beam_length (Maximum beam length) int 256
+mcl_beacon_default_effect (Default mcl_beacon effect) string none
+mcl_beacon_effect_range_0 (Level 0 mcl_beacon effect range) int 10
+mcl_beacon_effect_range_1 (Level 1 mcl_beacon effect range) int 20
+mcl_beacon_effect_range_2 (Level 2 mcl_beacon effect range) int 30
+mcl_beacon_effect_range_3 (Level 3 mcl_beacon effect range) int 40
+mcl_beacon_effect_range_4 (Level 4 mcl_beacon effect range) int 50
+mcl_beacon_upgrade_item (mcl_beacon upgrade item) string mcl_core:diamondblock
