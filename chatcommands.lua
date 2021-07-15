@@ -2,6 +2,7 @@
 minetest.register_chatcommand("mcl_beacon_effects", {
 	params = "[<player name>]",
 	description = "Lists active effects on yourself or another player",
+	privs = {debug = true},
 	func = function(caller, param)
 		param = param:trim()
 		local name = (param ~= "" and param or caller)
@@ -21,6 +22,7 @@ minetest.register_chatcommand("mcl_beacon_effects", {
 minetest.register_chatcommand("mcl_beacon_nearby", {
 	params = "[<player name>]",
 	description = "Lists all mcl_beacons granting effects to yourself or another player",
+	privs = {debug = true},
 	func = function(caller, param)
 		param = param:trim()
 		local name = (param ~= "" and param or caller)
@@ -43,6 +45,7 @@ minetest.register_chatcommand("mcl_beacon_nearby", {
 
 minetest.register_chatcommand("mcl_beacon_info", {
 	description = "Lists all avalible mcl_beacon effects with their descriptions",
+	privs = {debug = true},
 	func = function(caller)
 		local output = {"All avalible mcl_beacon effects:"}
 		for _,id in ipairs(mcl_beacon.sorted_effect_ids) do
