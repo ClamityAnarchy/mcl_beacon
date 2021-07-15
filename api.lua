@@ -135,7 +135,7 @@ function mcl_beacon.register_color(name, colorstring, coloring_item)
 	minetest.register_node("mcl_beacon:"..id, {
 		description = name.." Beacon",
 		tiles = {"mcl_beacon.png"},
-		groups = {cracky = 3, oddly_breakable_by_hand = 3, mcl_beacon = 1},
+		groups = { handy=1, pickaxey=1,cracky = 3, oddly_breakable_by_hand = 3, mcl_beacon = 1},
 		drawtype = "glasslike",
 		paramtype = "light",
 		paramtype2 = "facedir",
@@ -212,4 +212,3 @@ function mcl_beacon.register_color(name, colorstring, coloring_item)
 		})
 	end
 end
-
