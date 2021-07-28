@@ -114,7 +114,7 @@ function mcl_beacon.update(pos)
 		pos = vector.add(pos, mcl_beacon.dir_to_vector[dir])
 		minetest.add_particlespawner({
 			amount = 32,
-			time = 3,
+			time = 1,
 			minpos = {x=pos.x-0.25, y=pos.y-0.25, z=pos.z-0.25},
 			maxpos = {x=pos.x+0.25, y=pos.y+0.25, z=pos.z+0.25},
 			minvel = {x=-0.8, y=-0.8, z=-0.8},
